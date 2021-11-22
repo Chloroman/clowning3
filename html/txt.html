@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/txt.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <nav class="d-flex justify-content-around pt-3" id="fell" style="position: sticky; top: 0px; background-color: white; z-index: 2000;">
+        <div>
+            <img src="images/LinkedIn_logo.svg" alt="">
+            <i class="fa fa-bars pl-3" style="color: rgba(0, 0, 0, 0.5);"></i>
+            <i class="fa fa-search pl-3" style="color: rgba(0, 0, 0, 0.5);"></i>
+        </div>
+        <div>
+            <i class="fa fa-columns pr-3"></i>
+            <img src="images/IMG-20210130-WA0058.jpg" alt="" width="24px" height="24px" style="border-radius: 100%;">
+        </div>
+    </nav>
+
+    <nav style="position: sticky; top: 0px; z-index: 2000; background-color: white;" id="fell1">
+        <nav class="navbar">
+            <main class="container ">
+                <div>
+                    <img src="images/LinkedIn_logo.svg" alt="">
+                    <span class="learn">LEARNING</span>
+                </div>
+                <div>
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div class="love" onclick="Tumi()" id="value">
+                    <div class="not">
+                        <i class="fa fa-search pl-1" id="icon" style="padding:8.5px;"></i>
+                        <input type="text" id="stu"  placeholder="Search for skills, subjects or software">
+                    </div>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <section class="d-flex">
+                    <div class="p-3">
+                        <a href="#" class="lagos">
+                            <div class="help">
+                                <i class="fa fa-home" style="font-size: 20px; padding-left: 5px;"></i>
+                                <span>Home</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="p-3">
+                        <a href="#" class="lagos">
+                            <div class="help">
+                                <i class="fa fa-columns" style="font-size: 20px; padding-left: 5px;"></i>
+                                <span>Learning</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="dropdown p-3 pt-2">
+                        <img src="images/IMG_20200711_170112.jpg" alt="" style="width: 25px; height: 25px; border-radius: 100%;"><br>
+                        <a href="#"class=" a dropdown-toggle lagos"  type="link" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Me  
+                        </a>
+                        <ul class="dropdown-menu shadow-sm  " aria-labelledby="dropdownMenuButton1" style="width: 230px;">
+                            <section class="d-flex justify-content-between" style="padding: 15px 15px 0px 15px;">
+                                <div>
+                                    <img src="images/IMG_20200711_170112.jpg" style="width: 60px; height: 60px; border-radius: 100%;">
+                                </div>
+                                <div>
+                                    <h6>akinwale tumininu</h6>
+                                    <p>Personal Account</p>
+                                </div>
+                            </section><hr>
+                          <li><a class="dropdown-item" href="#">My Learning</a></li>
+                          <li><a class="dropdown-item" href="#">In Progress</a></li>
+                          <li><a class="dropdown-item" href="#">Saved</a></li>
+                          <li><a class="dropdown-item" href="#">Collections</a></li>
+                          <li><a class="dropdown-item" href="#">Learning History</a></li>
+                          <li><a class="dropdown-item" href="#">Skills</a></li>
+                          <hr>
+                          <li><a class="dropdown-item" href="#">Language</a></li>
+                          <li><a class="dropdown-item" href="#">Settings</a></li>
+                          <li><a class="dropdown-item" href="#">Go to Linkedin Profile</a></li>
+                          <li><a class="dropdown-item" href="#">Buy for my team</a></li>
+                          <li><a class="dropdown-item" href="#">Help center</a></li>
+                          <li><a class="dropdown-item" href="#">Sign out.</a></li>
+    
+                        </ul>
+                    </div>
+                    <div class="dropdown p-3 pt-2">
+                        <i class="fa fa-globe" style="font-size: 20px; padding-left: 5px;"></i><br>
+                        <a href="#"class=" a dropdown-toggle lagos"  type="link" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          EN
+                        </a>
+                        <ul class="dropdown-menu shadow-sm  " aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Language</a></li>
+                          <li><a class="dropdown-item" href="#">English (English)</a></li>
+                          <li><a class="dropdown-item" href="#">Espanol (Spanish)</a></li>
+                          <li><a class="dropdown-item" href="#">Francais (French)</a></li>
+                          <li><a class="dropdown-item" href="#">Deutsch (German)</a></li>
+                          <li><a class="dropdown-item" href="#">日本 (Japanese)</a></li>
+                          <li><a class="dropdown-item" href="#">华语 / 華語 (Simplified Chinese)</a></li>
+                          <li><a class="dropdown-item" href="#">português (Portuguese)</a></li>
+    
+                        </ul>
+                    </div>
+                </section>
+                <div>
+                    <button class="number">Start my free month</button>
+                </div>
+                <!-- <input type="text" class="form-control w-50" onclick="Tumi()"> -->
+                <p id="yes"></p>
+            </main>
+        </nav>
+        <section id="up" class="shadow-sm">
+            <div class="container d-flex justify-content-end">
+                <div class="none">
+                    Solutions for:
+                </div>
+                <a href="#" class="nav2-links"> Business </a> 
+                <a href="#" class="nav2-links"> Higher Education </a>
+                <a href="#" class="nav2-links"> Government </a>
+                <span style="padding: 5px 10px 5px 10px;"> | </span>
+                <a href="#" class="nav2-links"> Buy for my team </a> 
+            </div>
+        </section>
+    
+    </nav>
+    <main class="yes" id="tomi">
+        <div class="container pt-2 mop">
+            <span class="my">
+                Browse by topic
+            </span>
+        </div> <hr>
+        <div class="pl-3">
+            <span id="trip">
+                Trending business topics
+            </span>
+            <div class="pt-3 motor">
+                <i class="fa fa-list-alt"></i>
+                <span class="pl-3">Leadership and Management</span>
+                <div id="trip" style="padding-left: 37px;">910 course results</div>
+            </div>
+        </div>
+        <div class="pl-3">
+            <div class="pt-3 motor">
+                <i class="fa fa-list-alt"></i>
+                <span class="pl-3">Professional Development</span>
+                <div id="trip" style="padding-left: 37px;">910 course results</div>
+            </div>
+        </div>
+        <div class="pl-3">
+            <div class="pt-3 motor">
+                <i class="fa fa-list-alt"></i>
+                <span class="pl-3">Business Software and Tools</span>
+                <div id="trip" style="padding-left: 37px;">910 course results</div>
+            </div>
+        </div><hr>
+        <div class="pl-3">
+            <span id="trip">
+                Trending creative topics
+            </span>
+            <div class="pt-3 motor">
+                <i class="fa fa-list-alt"></i>
+                <span class="pl-3">Graphics and Design</span>
+                <div id="trip" style="padding-left: 37px;">910 course results</div>
+            </div>
+        </div>
+        <div class="pl-3">
+            <div class="pt-3 motor">
+                <i class="fa fa-list-alt"></i>
+                <span class="pl-3">AEC</span>
+                <div id="trip" style="padding-left: 37px;">910 course results</div>
+            </div>
+        </div>
+        <div class="pl-3">
+            <div class="pt-3 motor">
+                <i class="fa fa-list-alt"></i>
+                <span class="pl-3">Photography</span>
+                <div id="trip" style="padding-left: 37px;">910 course results</div>
+            </div>
+        </div><hr>
+        <div class="pl-3">
+            <span id="trip">
+                Trending technology topics
+            </span>
+            <div class="pt-3 motor">
+                <i class="fa fa-list-alt"></i>
+                <span class="pl-3">Graphics and Design</span>
+                <div id="trip" style="padding-left: 37px;">910 course results</div>
+            </div>
+        </div>
+        <div class="pl-3">
+            <div class="pt-3 motor">
+                <i class="fa fa-list-alt"></i>
+                <span class="pl-3">Data Science</span>
+                <div id="trip" style="padding-left: 37px;">910 course results</div>
+            </div>
+        </div>
+        <div class="pl-3">
+            <div class="pt-3 motor">
+                <i class="fa fa-list-alt"></i>
+                <span class="pl-3">Software Development</span>
+                <div id="trip" style="padding-left: 37px;">910 course results</div>
+            </div>
+        </div>
+        <div class="pl-3">
+            <div class="pt-3 motor">
+                <i class="fa fa-list-alt"></i>
+                <span class="pl-3">Web Development</span>
+                <div id="trip" style="padding-left: 37px;">910 course results</div>
+            </div>
+        </div>
+    </main>
+
+
+    <section class="container">
+        <div class="row">
+            <div class="col-sm-9 pt-5">
+                <div>
+                    <h2>akinwale, grow your skills and advance your career with <br> LinkedIn Learning</h2>
+                </div>
+                <div class="pt-2">
+                    <img src="images/IMG_20200711_170112.jpg" alt="" width="30px" height="30px" style="border-radius: 100%;">
+                    <img src="images/IMG-20210130-WA0058.jpg" alt="" width="30px" height="30px" style="border-radius: 100%;position: absolute; left: 23px;">
+                    <span class="pl-3">Millions of members are on LinkedIn Learning</span>
+                </div>
+                <div class="pt-3">
+                    <button class="bar">Start my free month</button>
+                </div>
+                <div class="pt-3">
+                    <a href="#" id="bag">Need to train your team? Learn More.</a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div>
+                    <img src="images/learning.png" alt=""  width="100%" class="x-mt">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="pt-3 go mt-5 pb-5">
+        <div class="container">
+            <div class="d-flex">
+                <div class="live">Live events with experts</div>
+                <a href="#" id="bag" class="pt-2 pl-2">Show all</a>
+            </div>
+            <section class="d-flex pt-4" style="overflow-x: scroll;">
+                <div class="be">
+                    <div class="card shadow-0" style="min-width: 250px; height: 130px; align-items: center; background-color: #F3F2EF;">
+                        <img src="images/link 3.jpg" width="150px" height="100%">
+                        <span class="border rounded text-dark px-2" style="background-color: white; position:absolute; left: 2%;top:2%;" >IN 2 DAYS</span>
+                        <span class="bg-dark text-white px-1 " style="position: absolute; z-index: 5; top: 82%; left: 56%; opacity: 0.7;">Jul 22, 4:00PM</span>
+                    </div>
+                    <span class="font">EVENT</span><br>
+                    <span>
+                        Semantic HTML and CSS Code <br>Challenges: Navbars challenges...
+                    </span>
+                    <p class="txt-style">
+                        By: Khaulat Ayomide Abdulhakeem<br><br> Are you a recent graduate struggling with securing a job after graduation? What have you tried? What questions do you have? I'll be talking... <br><br> 1,140 interested
+                    </p>
+                </div>
+                <div class="ml-4 be">
+                    <div class="card shadow-0" style="min-width: 250px; height: 130px; align-items: center; background-color: #F3F2EF;">
+                        <img src="images/link 4.jpg" width="150px" height="100%">
+                        <span class="border rounded text-dark px-2" style="background-color: white; position:absolute; left: 2%;top:2%;" >IN 2 DAYS</span>
+                        <span class="bg-dark text-white px-1 " style="position: absolute; z-index: 5; top: 82%; left: 56%; opacity: 0.7;">Jul 22, 4:00PM</span>
+                    </div>
+                    <span class="font">EVENT</span><br>
+                    <span>
+                        Semantic HTML and CSS Code <br>Challenges: Navbars challenges...
+                    </span>
+                    <p class="txt-style">
+                        By: Khaulat Ayomide Abdulhakeem<br><br> Are you a recent graduate struggling with securing a job after graduation? What have you tried? What questions do you have? I'll be talking... <br><br> 1,140 interested
+                    </p>
+                </div>
+                <div class="ml-4 be">
+                    <div class="card shadow-0" style="min-width: 250px; height: 130px; align-items: center; background-color: #F3F2EF;">
+                        <img src="images/link 5.jpg" width="150px" height="100%">
+                        <span class="border rounded text-dark px-2" style="background-color: white; position:absolute; left: 2%;top:2%;" >IN 2 DAYS</span>
+                        <span class="bg-dark text-white px-1 " style="position: absolute; z-index: 5; top: 82%; left: 56%; opacity: 0.7;">Jul 22, 4:00PM</span>
+                    </div>
+                    <span class="font">EVENT</span><br>
+                    <span>
+                        Semantic HTML and CSS Code <br>Challenges: Navbars challenges...
+                    </span>
+                    <p class="txt-style">
+                        By: Khaulat Ayomide Abdulhakeem<br><br> Are you a recent graduate struggling with securing a job after graduation? What have you tried? What questions do you have? I'll be talking... <br><br> 1,140 interested
+                    </p>
+                </div>
+                <div class="ml-4 be">
+                    <div class="card shadow-0" style="min-width: 250px; height: 130px; align-items: center; background-color: #F3F2EF;">
+                        <img src="images/link 1.jpg" width="150px" height="100%">
+                        <span class="border rounded text-dark px-2" style="background-color: white; position:absolute; left: 2%;top:2%;" >IN 2 DAYS</span>
+                        <span class="bg-dark text-white px-1 " style="position: absolute; z-index: 5; top: 82%; left: 56%; opacity: 0.7;">Jul 22, 4:00PM</span>
+                    </div>
+                    <span class="font">EVENT</span><br>
+                    <span>
+                        Semantic HTML and CSS Code <br>Challenges: Navbars challenges...
+                    </span>
+                    <p class="txt-style">
+                        By: Khaulat Ayomide Abdulhakeem<br><br> Are you a recent graduate struggling with securing a job after graduation? What have you tried? What questions do you have? I'll be talking... <br><br> 1,140 interested
+                    </p>
+                </div>
+                <div class="ml-4 be">
+                    <div class="card shadow-0" style="min-width: 250px; height: 130px; align-items: center; background-color: #F3F2EF;">
+                        <img src="images/link 10.jpg" width="150px" height="100%">
+                        <span class="border rounded text-dark px-2" style="background-color: white; position:absolute; left: 2%;top:2%;" >IN 2 DAYS</span>
+                        <span class="bg-dark text-white px-1 " style="position: absolute; z-index: 5; top: 82%; left: 56%; opacity: 0.7;">Jul 22, 4:00PM</span>
+                    </div>
+                    <span class="font">EVENT</span><br>
+                    <span>
+                        Semantic HTML and CSS Code <br>Challenges: Navbars challenges...
+                    </span>
+                    <p class="txt-style">
+                        By: Khaulat Ayomide Abdulhakeem<br><br> Are you a recent graduate struggling with securing a job after graduation? What have you tried? What questions do you have? I'll be talking... <br><br> 1,140 interested
+                    </p>
+                </div>
+                <div class="ml-4 be">
+                    <div class="card shadow-0" style="min-width: 250px; height: 130px; align-items: center; background-color: #F3F2EF;">
+                        <img src="images/link 2.jpg" width="150px" height="100%">
+                        <span class="border rounded text-dark px-2" style="background-color: white; position:absolute; left: 2%;top:2%;" >IN 2 DAYS</span>
+                        <span class="bg-dark text-white px-1 " style="position: absolute; z-index: 5; top: 82%; left: 56%; opacity: 0.7;">Jul 22, 4:00PM</span>
+                    </div>
+                    <span class="font">EVENT</span><br>
+                    <span>
+                        Semantic HTML and CSS Code <br>Challenges: Navbars challenges...
+                    </span>
+                    <p class="txt-style">
+                        By: Khaulat Ayomide Abdulhakeem<br><br> Are you a recent graduate struggling with securing a job after graduation? What have you tried? What questions do you have? I'll be talking... <br><br> 1,140 interested
+                    </p>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <main class="container card mt-5 mb-4">
+        <div class="row pt-4 pb-5">
+            <div class="col-sm-9">
+                <div class="d-flex pb-4">
+                    <h4>
+                        Get the most common skills in Nigeria
+                    </h4>
+                    <i  type="icon" style="font-size: 26px;" class=" fa fa-info-circle pt-1 pl-2" data-bs-toggle="tooltip" data-bs-placement="right" title="Based on LinkedIn data, these are the  top 5 most common skills added to LinkedIn profiles in Nigeria in the past year">
+                        
+                      </i>
+                </div>
+
+                <main style="display: flex; flex-wrap: wrap;">
+                    <div class="note mr-3 mb-3 px-2 pt-3 pb-3 d-flex justify-content-between">
+                            <h4>1</h4>
+                            <h6>Engineering</h6>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <h6 class="band">Eplore</h6>
+                    </div>
+                    <div class="note d-flex mr-3 mb-3 px-2 pt-3 pb-3 justify-content-between">
+                        <h4>1</h4>
+                        <h6>Finance</h6>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <h6 class="band">Eplore</h6>
+                    </div>
+                    <div class="note mr-3 mb-3 px-2 pt-3 pb-3 d-flex justify-content-between">
+                        <h4>1</h4>
+                        <h6>Analytical Shill</h6>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <h6 class="band">Eplore</h6>
+                    </div>
+                    <div class="note mr-3 mb-3 px-2 pt-3 pb-3 d-flex justify-content-between">
+                        <h4>1</h4>
+                        <h6>Banking</h6>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <h6 class="band">Eplore</h6>
+                    </div>
+                    <div class="note mr-3 mb-3 px-2 pt-3 pb-3 d-flex justify-content-between">
+                        <h4>1</h4>
+                        <h6>Data Analysis</h6>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <h6 class="band">Eplore</h6> 
+                    </div>
+                </main>
+            </div>
+            <div class="col-sm-3">
+                <img src="images/love.png" alt="" width="100%" class="boat">
+            </div>
+        </div>
+    </main>
+
+    <div class="container">
+        <h2 class="myfi">Browse our vast library of expert-led courses</h2>
+        <hr>
+    </div>
+
+    <main class="container">
+        <div class="mt-5">
+            <h2 class="nope pb-4">Top picks for akinwale</h2>
+            <main class="d-flex" style="overflow-x: scroll;">
+                <div class="be">
+                    <div class="card shadow-0" style="min-width: 250px; height: 130px; align-items: center; background-color: #F3F2EF;">
+                        <img src="images/link 6.jpg" width="150px" height="100%">
+                        <span class="border rounded text-dark px-2" style="background-color: white; position:absolute; left: 2%;top:2%;" >POPULAR</span>
+                        <span class="bg-dark text-white px-1 " style="position: absolute; z-index: 5; top: 82%; left: 85%; opacity: 0.7;">53M</span>
+                    </div>
+                    <span class="font">COURSE</span><br>
+                    <span>
+                        Sales and the Science of Trust
+                    </span>
+                    <p class="txt-style">
+                        By: Khaulat Ayomide Abdulhakeem<br><br> Are you a recent graduate struggling with securing a job after graduation? What have you tried? What questions do you have? I'll be talking... <br><br> 1,140 interested
+                    </p>
+                </div>
+                <div class="ml-3 be">
+                    <div class="card shadow-0" style="min-width: 250px; height: 130px; align-items: center; background-color: #F3F2EF;">
+                        <img src="images/link 7.jpg" width="150px" height="100%">
+                        <span class="border rounded text-dark px-2" style="background-color: white; position:absolute; left: 2%;top:2%;" >POPULAR</span>
+                        <span class="bg-dark text-white px-1 " style="position: absolute; z-index: 5; top: 82%; left: 85%; opacity: 0.7;">53M</span>
+                    </div>
+                    <span class="font">COURSE</span><br>
+                    <span>
+                        Mixing and Sound Design: <br>Multimode Filters
+                    </span>
+                    <p class="txt-style">
+                        By: Khaulat Ayomide Abdulhakeem<br><br> Are you a recent graduate struggling with securing a job after graduation? What have you tried? What questions do you have? I'll be talking... <br><br> 1,140 interested
+                    </p>
+                </div>
+                <div class="ml-3 be">
+                    <div class="card shadow-0" style="min-width: 250px; height: 130px; align-items: center; background-color: #F3F2EF;">
+                        <img src="images/link 7.jpg" width="150px" height="100%">
+                        <span class="border rounded text-dark px-2" style="background-color: white; position:absolute; left: 2%;top:2%;" >POPULAR</span>
+                        <span class="bg-dark text-white px-1 " style="position: absolute; z-index: 5; top: 82%; left: 85%; opacity: 0.7;">53M</span>
+                    </div>
+                    <span class="font">COURSE</span><br>
+                    <span>
+                        Mixing and Sound Design: <br>Multimode Filters
+                    </span>
+                    <p class="txt-style">
+                        By: Khaulat Ayomide Abdulhakeem<br><br> Are you a recent graduate struggling with securing a job after graduation? What have you tried? What questions do you have? I'll be talking... <br><br> 1,140 interested
+                    </p>
+                </div>
+                <div class="ml-3 be">
+                    <div class="card shadow-0" style="min-width: 250px; height: 130px; align-items: center; background-color: #F3F2EF;">
+                        <img src="images/link 7.jpg" width="150px" height="100%">
+                        <span class="border rounded text-dark px-2" style="background-color: white; position:absolute; left: 2%;top:2%;" >POPULAR</span>
+                        <span class="bg-dark text-white px-1 " style="position: absolute; z-index: 5; top: 82%; left: 85%; opacity: 0.7;">53M</span>
+                    </div>
+                    <span class="font">COURSE</span><br>
+                    <span>
+                        Mixing and Sound Design: <br>Multimode Filters
+                    </span>
+                    <p class="txt-style">
+                        By: Khaulat Ayomide Abdulhakeem<br><br> Are you a recent graduate struggling with securing a job after graduation? What have you tried? What questions do you have? I'll be talking... <br><br> 1,140 interested
+                    </p>
+                </div>
+                <div class="ml-3 be">
+                    <div class="card shadow-0" style="min-width: 250px; height: 130px; align-items: center; background-color: #F3F2EF;">
+                        <img src="images/link 7.jpg" width="150px" height="100%">
+                        <span class="border rounded text-dark px-2" style="background-color: white; position:absolute; left: 2%;top:2%;" >POPULAR</span>
+                        <span class="bg-dark text-white px-1 " style="position: absolute; z-index: 5; top: 82%; left: 85%; opacity: 0.7;">53M</span>
+                    </div>
+                    <span class="font">COURSE</span><br>
+                    <span>
+                        Mixing and Sound Design: <br>Multimode Filters
+                    </span>
+                    <p class="txt-style">
+                        By: Khaulat Ayomide Abdulhakeem<br><br> Are you a recent graduate struggling with securing a job after graduation? What have you tried? What questions do you have? I'll be talking... <br><br> 1,140 interested
+                    </p>
+                </div>
+            </main>
+        </div>
+    </main>
+
+    <main class="container">
+        <div class="mt-5 pt-5">
+            <h2 class="nope pb-4">Most liked on LinkedIn Learning</h2>
+            <main class="d-flex" style="overflow-x: scroll;">
+                <div class="be">
+                    <div class="card shadow-0" style="min-width: 250px; height: 130px; align-items: center; background-color: #F3F2EF;">
+                        <img src="images/link 6.jpg" width="150px" height="100%">
+                        <span class="border rounded text-dark px-2" style="background-color: white; position:absolute; left: 2%;top:2%;" >POPULAR</span>
+                        <span class="bg-dark text-white px-1 " style="position: absolute; z-index: 5; top: 82%; left: 85%; opacity: 0.7;">53M</span>
+                    </div>
+                    <span class="font">COURSE</span><br>
+                    <span>
+                        Sales and the Science of Trust
+                    </span>
+                    <p class="txt-style">
+                        By: Khaulat Ayomide Abdulhakeem<br><br> Are you a recent graduate struggling with securing a job after graduation? What have you tried? What questions do you have? I'll be talking... <br><br> 1,140 interested
+                    </p>
+                </div>
+                <div class="ml-3 be">
+                    <div class="card shadow-0" style="min-width: 250px; height: 130px; align-items: center; background-color: #F3F2EF;">
+                        <img src="images/link 1.jpg" width="150px" height="100%">
+                        <span class="border rounded text-dark px-2" style="background-color: white; position:absolute; left: 2%;top:2%;" >POPULAR</span>
+                        <span class="bg-dark text-white px-1 " style="position: absolute; z-index: 5; top: 82%; left: 85%; opacity: 0.7;">53M</span>
+                    </div>
+                    <span class="font">COURSE</span><br>
+                    <span>
+                        Mixing and Sound Design: <br>Multimode Filters
+                    </span>
+                    <p class="txt-style">
+                        By: Khaulat Ayomide Abdulhakeem<br><br> Are you a recent graduate struggling with securing a job after graduation? What have you tried? What questions do you have? I'll be talking... <br><br> 1,140 interested
+                    </p>
+                </div>
+                <div class="ml-3 be">
+                    <div class="card shadow-0" style="min-width: 250px; height: 130px; align-items: center; background-color: #F3F2EF;">
+                        <img src="images/link 3.jpg" width="150px" height="100%">
+                        <span class="border rounded text-dark px-2" style="background-color: white; position:absolute; left: 2%;top:2%;" >POPULAR</span>
+                        <span class="bg-dark text-white px-1 " style="position: absolute; z-index: 5; top: 82%; left: 85%; opacity: 0.7;">53M</span>
+                    </div>
+                    <span class="font">COURSE</span><br>
+                    <span>
+                        Mixing and Sound Design: <br>Multimode Filters
+                    </span>
+                    <p class="txt-style">
+                        By: Khaulat Ayomide Abdulhakeem<br><br> Are you a recent graduate struggling with securing a job after graduation? What have you tried? What questions do you have? I'll be talking... <br><br> 1,140 interested
+                    </p>
+                </div>
+                <div class="ml-3 be">
+                    <div class="card shadow-0" style="min-width: 250px; height: 130px; align-items: center; background-color: #F3F2EF;">
+                        <img src="images/link 2.jpg" width="150px" height="100%">
+                        <span class="border rounded text-dark px-2" style="background-color: white; position:absolute; left: 2%;top:2%;" >POPULAR</span>
+                        <span class="bg-dark text-white px-1 " style="position: absolute; z-index: 5; top: 82%; left: 85%; opacity: 0.7;">53M</span>
+                    </div>
+                    <span class="font">COURSE</span><br>
+                    <span>
+                        Mixing and Sound Design: <br>Multimode Filters
+                    </span>
+                    <p class="txt-style">
+                        By: Khaulat Ayomide Abdulhakeem<br><br> Are you a recent graduate struggling with securing a job after graduation? What have you tried? What questions do you have? I'll be talking... <br><br> 1,140 interested
+                    </p>
+                </div>
+                <div class="ml-3 be">
+                    <div class="card shadow-0" style="min-width: 250px; height: 130px; align-items: center; background-color: #F3F2EF;">
+                        <img src="images/link 5.jpg" width="150px" height="100%">
+                        <span class="border rounded text-dark px-2" style="background-color: white; position:absolute; left: 2%;top:2%;" >POPULAR</span>
+                        <span class="bg-dark text-white px-1 " style="position: absolute; z-index: 5; top: 82%; left: 85%; opacity: 0.7;">53M</span>
+                    </div>
+                    <span class="font">COURSE</span><br>
+                    <span>
+                        Mixing and Sound Design: <br>Multimode Filters
+                    </span>
+                    <p class="txt-style">
+                        By: Khaulat Ayomide Abdulhakeem<br><br> Are you a recent graduate struggling with securing a job after graduation? What have you tried? What questions do you have? I'll be talking... <br><br> 1,140 interested
+                    </p>
+                </div>
+            </main>
+        </div>
+    </main>
+
+    <main class="container">
+        <div class="mt-5">
+            <h2 class="nope pb-4">Top picks for akinwale</h2>
+            <main class="d-flex" style="overflow-x: scroll;">
+                <div class="be">
+                    <div class="card shadow-0" style="min-width: 250px; height: 130px; align-items: center; background-color: #F3F2EF;">
+                        <img src="images/link 6.jpg" width="150px" height="100%">
+                        <span class="border rounded text-dark px-2" style="background-color: white; position:absolute; left: 2%;top:2%;" >POPULAR</span>
+                        <span class="bg-dark text-white px-1 " style="position: absolute; z-index: 5; top: 82%; left: 85%; opacity: 0.7;">53M</span>
+                    </div>
+                    <span class="font">COURSE</span><br>
+                    <span>
+                        Sales and the Science of Trust
+                    </span>
+                    <p class="txt-style">
+                        By: Khaulat Ayomide Abdulhakeem<br><br> Are you a recent graduate struggling with securing a job after graduation? What have you tried? What questions do you have? I'll be talking... <br><br> 1,140 interested
+                    </p>
+                </div>
+                <div class="ml-3 be">
+                    <div class="card shadow-0" style="min-width: 250px; height: 130px; align-items: center; background-color: #F3F2EF;">
+                        <img src="images/link 7.jpg" width="150px" height="100%">
+                        <span class="border rounded text-dark px-2" style="background-color: white; position:absolute; left: 2%;top:2%;" >POPULAR</span>
+                        <span class="bg-dark text-white px-1 " style="position: absolute; z-index: 5; top: 82%; left: 85%; opacity: 0.7;">53M</span>
+                    </div>
+                    <span class="font">COURSE</span><br>
+                    <span>
+                        Mixing and Sound Design: <br>Multimode Filters
+                    </span>
+                    <p class="txt-style">
+                        By: Khaulat Ayomide Abdulhakeem<br><br> Are you a recent graduate struggling with securing a job after graduation? What have you tried? What questions do you have? I'll be talking... <br><br> 1,140 interested
+                    </p>
+                </div>
+                <div class="ml-3 be">
+                    <div class="card shadow-0" style="min-width: 250px; height: 130px; align-items: center; background-color: #F3F2EF;">
+                        <img src="images/link 7.jpg" width="150px" height="100%">
+                        <span class="border rounded text-dark px-2" style="background-color: white; position:absolute; left: 2%;top:2%;" >POPULAR</span>
+                        <span class="bg-dark text-white px-1 " style="position: absolute; z-index: 5; top: 82%; left: 85%; opacity: 0.7;">53M</span>
+                    </div>
+                    <span class="font">COURSE</span><br>
+                    <span>
+                        Mixing and Sound Design: <br>Multimode Filters
+                    </span>
+                    <p class="txt-style">
+                        By: Khaulat Ayomide Abdulhakeem<br><br> Are you a recent graduate struggling with securing a job after graduation? What have you tried? What questions do you have? I'll be talking... <br><br> 1,140 interested
+                    </p>
+                </div>
+                <div class="ml-3 be">
+                    <div class="card shadow-0" style="min-width: 250px; height: 130px; align-items: center; background-color: #F3F2EF;">
+                        <img src="images/link 7.jpg" width="150px" height="100%">
+                        <span class="border rounded text-dark px-2" style="background-color: white; position:absolute; left: 2%;top:2%;" >POPULAR</span>
+                        <span class="bg-dark text-white px-1 " style="position: absolute; z-index: 5; top: 82%; left: 85%; opacity: 0.7;">53M</span>
+                    </div>
+                    <span class="font">COURSE</span><br>
+                    <span>
+                        Mixing and Sound Design: <br>Multimode Filters
+                    </span>
+                    <p class="txt-style">
+                        By: Khaulat Ayomide Abdulhakeem<br><br> Are you a recent graduate struggling with securing a job after graduation? What have you tried? What questions do you have? I'll be talking... <br><br> 1,140 interested
+                    </p>
+                </div>
+                <div class="ml-3 be">
+                    <div class="card shadow-0" style="min-width: 250px; height: 130px; align-items: center; background-color: #F3F2EF;">
+                        <img src="images/link 7.jpg" width="150px" height="100%">
+                        <span class="border rounded text-dark px-2" style="background-color: white; position:absolute; left: 2%;top:2%;" >POPULAR</span>
+                        <span class="bg-dark text-white px-1 " style="position: absolute; z-index: 5; top: 82%; left: 85%; opacity: 0.7;">53M</span>
+                    </div>
+                    <span class="font">COURSE</span><br>
+                    <span>
+                        Mixing and Sound Design: <br>Multimode Filters
+                    </span>
+                    <p class="txt-style">
+                        By: Khaulat Ayomide Abdulhakeem<br><br> Are you a recent graduate struggling with securing a job after graduation? What have you tried? What questions do you have? I'll be talking... <br><br> 1,140 interested
+                    </p>
+                </div>
+            </main>
+        </div>
+    </main>
+
+    <main class="container">
+        <div class="mt-5 pt-5">
+            <h2 class="nope pb-4">Popular on LinkedIn Learning</h2>
+            <main class="d-flex" style="overflow-x: scroll;">
+                <div class="be">
+                    <div class="card shadow-0" style="min-width: 250px; height: 130px; align-items: center; background-color: #F3F2EF;">
+                        <img src="images/20.jpg" width="150px" height="100%">
+                        <span class="border rounded text-dark px-2" style="background-color: white; position:absolute; left: 2%;top:2%;" >POPULAR</span>
+                        <span class="bg-dark text-white px-1 " style="position: absolute; z-index: 5; top: 82%; left: 85%; opacity: 0.7;">53M</span>
+                    </div>
+                    <span class="font">COURSE</span><br>
+                    <span>
+                        Sales and the Science of Trust
+                    </span>
+                    <p class="txt-style">
+                        By: Khaulat Ayomide Abdulhakeem<br><br> Are you a recent graduate struggling with securing a job after graduation? What have you tried? What questions do you have? I'll be talking... <br><br> 1,140 interested
+                    </p>
+                </div>
+                <div class="ml-3 be">
+                    <div class="card shadow-0" style="min-width: 250px; height: 130px; align-items: center; background-color: #F3F2EF;">
+                        <img src="images/21.jpg" width="150px" height="100%">
+                        <span class="border rounded text-dark px-2" style="background-color: white; position:absolute; left: 2%;top:2%;" >POPULAR</span>
+                        <span class="bg-dark text-white px-1 " style="position: absolute; z-index: 5; top: 82%; left: 85%; opacity: 0.7;">53M</span>
+                    </div>
+                    <span class="font">COURSE</span><br>
+                    <span>
+                        Mixing and Sound Design: <br>Multimode Filters
+                    </span>
+                    <p class="txt-style">
+                        By: Khaulat Ayomide Abdulhakeem<br><br> Are you a recent graduate struggling with securing a job after graduation? What have you tried? What questions do you have? I'll be talking... <br><br> 1,140 interested
+                    </p>
+                </div>
+                <div class="ml-3 be">
+                    <div class="card shadow-0" style="min-width: 250px; height: 130px; align-items: center; background-color: #F3F2EF;">
+                        <img src="images/23.jpg" width="150px" height="100%">
+                        <span class="border rounded text-dark px-2" style="background-color: white; position:absolute; left: 2%;top:2%;" >POPULAR</span>
+                        <span class="bg-dark text-white px-1 " style="position: absolute; z-index: 5; top: 82%; left: 85%; opacity: 0.7;">53M</span>
+                    </div>
+                    <span class="font">COURSE</span><br>
+                    <span>
+                        Mixing and Sound Design: <br>Multimode Filters
+                    </span>
+                    <p class="txt-style">
+                        By: Khaulat Ayomide Abdulhakeem<br><br> Are you a recent graduate struggling with securing a job after graduation? What have you tried? What questions do you have? I'll be talking... <br><br> 1,140 interested
+                    </p>
+                </div>
+                <div class="ml-3 be">
+                    <div class="card shadow-0" style="min-width: 250px; height: 130px; align-items: center; background-color: #F3F2EF;">
+                        <img src="images/link 10.jpg" width="150px" height="100%">
+                        <span class="border rounded text-dark px-2" style="background-color: white; position:absolute; left: 2%;top:2%;" >POPULAR</span>
+                        <span class="bg-dark text-white px-1 " style="position: absolute; z-index: 5; top: 82%; left: 85%; opacity: 0.7;">53M</span>
+                    </div>
+                    <span class="font">COURSE</span><br>
+                    <span>
+                        Mixing and Sound Design: <br>Multimode Filters
+                    </span>
+                    <p class="txt-style">
+                        By: Khaulat Ayomide Abdulhakeem<br><br> Are you a recent graduate struggling with securing a job after graduation? What have you tried? What questions do you have? I'll be talking... <br><br> 1,140 interested
+                    </p>
+                </div>
+                <div class="ml-3 be">
+                    <div class="card shadow-0" style="min-width: 250px; height: 130px; align-items: center; background-color: #F3F2EF;">
+                        <img src="images/link 8.jpg" width="150px" height="100%">
+                        <span class="border rounded text-dark px-2" style="background-color: white; position:absolute; left: 2%;top:2%;" >POPULAR</span>
+                        <span class="bg-dark text-white px-1 " style="position: absolute; z-index: 5; top: 82%; left: 85%; opacity: 0.7;">53M</span>
+                    </div>
+                    <span class="font">COURSE</span><br>
+                    <span>
+                        Mixing and Sound Design: <br>Multimode Filters
+                    </span>
+                    <p class="txt-style">
+                        By: Khaulat Ayomide Abdulhakeem<br><br> Are you a recent graduate struggling with securing a job after graduation? What have you tried? What questions do you have? I'll be talking... <br><br> 1,140 interested
+                    </p>
+                </div>
+            </main>
+        </div>
+    </main>
+</body>
+</html>
+    <script src="Tumi.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
